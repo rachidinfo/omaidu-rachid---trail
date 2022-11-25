@@ -9,16 +9,60 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <h1 id="title">MicroVerse Survey Form</h1>
-    <p id="description">
-      Thank you for taking the time to help us improve the platform
-    </p>
-    <form action="" id="survey-form">
-      <input type="text" id="name" required />
-      <input type="email" id="email" required />
-    </form>
+    <div class="wrapper">
+      <div class="content">
+        <h1 id="title">MicroVerse Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+        <form action="" id="survey-form">
+          <label for="" id="name-label">Name</label>
+          <input type="text" id="name" required placeholder="name" />
+          <label for="" id="email-label">Email</label>
+          <input type="email" id="email" placeholder="email" required />
+          <label for="" id="number-label">number</label>
+          <input
+            type="number"
+            id="number"
+            min="6"
+            max="10"
+            placeholder="enter number of teams"
+          />
 
-    <h1>hello world .we are software developers</h1>
+          <select name="" id="dropdown">
+            <option value="">Micro</option>
+            <option value="">Verse</option>
+          </select>
+
+          <div class="radio">
+            <label for="">intern1</label>
+            <input type="radio" name="interns" id="" />
+            <label for="">intern 2</label>
+            <input type="radio" name="interns" id="" />
+          </div>
+
+          <label for="">Numbers</label>
+          <div class="checkers">
+            <input type="checkbox" value="checked" name="" id="" />
+            <input type="checkbox" value="checked" name="" id="" />
+            <input type="checkbox" value="checked" name="" id="" />
+            <input type="checkbox" value="checked" name="" id="" />
+          </div>
+
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="additional comments"
+          ></textarea>
+
+          <button id="submit">submit</button>
+        </form>
+
+        <h1>hello world .we are software developers</h1>
+      </div>
+    </div>
 
     <script src="js/index.js"></script>
   </body>
